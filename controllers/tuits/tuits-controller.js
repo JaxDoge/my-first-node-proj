@@ -5,7 +5,7 @@ const createTuit = (req, res) => {
     const newTuit = req.body;
     newTuit.likes = 0;
     newTuit.liked = false;
-    newTuit._id = (new Date()).getTime() + "";
+    newTuit._id = (new Date()).getTime();
     tuits.push(newTuit);
     res.json(newTuit);
 }
