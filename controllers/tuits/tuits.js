@@ -1,6 +1,8 @@
 export default [
     {
-        "_id": 123, "topic": "Space", "username": "SpaceX",
+        "_id": 123,
+        "topic": "Space",
+        "username": "SpaceX",
         "handle": "spacex",
         "time": "2h", "image": "spacex.png",
         "title": "SpaceX's Mission",
