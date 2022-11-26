@@ -8,7 +8,6 @@ const createTuit = async (req, res) => {
     newTuit.username = "Jose Annunziato";
     newTuit.handle = "jannunzi";
     newTuit.time = "3h";
-    console.log(newTuit);
     const insertedTuit = await tuitsDao.createTuit(newTuit);
     res.json(insertedTuit);
 }
@@ -35,5 +34,5 @@ export default (app) => {
     app.post('/api/tuits', createTuit);
     app.get('/api/tuits', findTuits);
     app.put('/api/tuits/:tid', updateTuit);
-    app.delete('/api/tuits', deleteTuit);
+    app.delete('/api/tuits/:tid', deleteTuit);
 }
