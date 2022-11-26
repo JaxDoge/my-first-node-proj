@@ -26,7 +26,7 @@ const updateTuit = async (req, res) => {
 }
 
 const deleteTuit = async (req, res) => {
-    const tuitIdToDelete = req.body["tid"];
+    const tuitIdToDelete = req.params["tid"];
     await tuitsDao.deleteTuit(tuitIdToDelete);
     res.sendStatus(200);
 }
