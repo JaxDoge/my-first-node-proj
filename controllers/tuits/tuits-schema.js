@@ -5,6 +5,7 @@ const schema = mongoose.Schema({
     likes: Number,
     liked: Boolean,
     username: String,
+    useravatar: String,
     handle: String,
     time: String,
 }, {collection: 'tuits'});

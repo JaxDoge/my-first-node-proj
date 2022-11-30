@@ -6,6 +6,7 @@ const createTuit = async (req, res) => {
     newTuit.likes = 0;
     newTuit.liked = false;
     newTuit.username = "Jose Annunziato";
+    newTuit.useravatar = "nerdAvatar.jpg";
     newTuit.handle = "jannunzi";
     newTuit.time = "3h";
     const insertedTuit = await tuitsDao.createTuit(newTuit);
